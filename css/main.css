@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 .hide   {
@@ -9,17 +12,12 @@
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-h1, h2, p {
-
-    margin: 1.6rem 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1 {
-    font-weight: 800;
-    font-size: 3.2rem;
+
+    margin: 1.6rem 0;
 }
 
 h2 {
@@ -166,4 +164,290 @@ nav ul li {
 nav ul li a:hover {
     color: lightsalmon;
     transition: .5s ease-in-out;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    width: 100%;
+    padding: 70px 100px;
+}
+
+.content    {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.content .header-content    {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .header-content h2 {
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .header-content h2 span {
+    color: rgb(133, 33, 33);
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.content .header-content p  {
+    color: #333;
+}
+
+.content .header-content a  {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: rgb(133, 33, 33);
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.imgBox img {
+    height: 800px;
+    width: 550px;
+}
+
+/* -------------- CONTACT US PAGE -------------- */
+
+form    {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border-radius: 10px;
+    padding: 6vw 4vw;
+}
+
+form h2 {
+    color: #333;
+}
+
+form p  {
+    color: #333;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+form input, form textarea   {
+    border: 0;
+    margin: 5px 0;
+    padding: 20px;
+    outline: none;
+    background: whitesmoke;
+    font-size: 1em;
+}
+
+form button {
+    border: 0;
+    padding: 15px;
+    outline: none;
+    background: rgb(23, 23, 33);
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* -------------- OUR STORY PAGE -------------- */
+.header-container   {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.header-container img   {
+    height: 500px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+.bio-container  {
+    display: flex;
+    flex-direction: center;
+}
+
+.bio-container img  {
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+}
+
+/* */
+.about-Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    text-align: center;
+}
+
+.about-Header h1  {
+    font-size: 1.0rem;
+    font-weight: bold;
+    line-height: 1.2;
+    color: orangered;
+}
+
+.about-Header h2  {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 4;
+}
+
+.about-Header p   {
+    color: darkgray;
+}
+
+.header .container  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ------------- MAIN PAGE ------------- */
+.container  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.teamContainer  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.teamBio    {
+    padding: 5em;
+    max-width: 50%;
+}
+
+/* ------------- BUTTONS ------------- */
+.buttons   {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn    {
+    text-decoration: none;
+    padding: 20px 50px;
+    font-size: 1.25rem;
+    position: relative;
+    margin: 60px;
+    justify-content: space-between;
+}
+
+/* ------------- LIL BUTTON ------------- */
+.lil-button {
+    background: #000;
+    color: #fff;
+    border-radius: 100px;
+    transition: transforom 0.3s ease;
+}
+
+.lil-button::after, .lil-button::before {
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background: #000;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+.lil-button:hover   {
+    transform: translate(-12px, -12px);
+}
+
+.lil-button:hover::after   {
+    transform: translate(6px, 6px);
+}
+
+.lil-button:hover::before   {
+    transform: translate(12px, 12px);
+}
+
+/* ------------- CARSON BUTTON ------------- */
+.car-button {
+    background: orangered;
+    color: #fff;
+    border-radius: 100px;
+    transition: transforom 0.3s ease;
+}
+
+.car-button::after, .car-button::before {
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background: orangered;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+.car-button:hover   {
+    transform: translate(-12px, -12px);
+}
+
+.car-button:hover::after   {
+    transform: translate(6px, 6px);
+}
+
+.car-button:hover::before   {
+    transform: translate(12px, 12px);
+}
+
+@media (max-width: 768px) { 
+    .header .container  {
+        flex-direction: column;
+        padding-top: 5px;
+        text-align: center;
+    }   
+
+    .body .container    {
+        display: block;
+        text-align: center;
+    }
+}
+
+/* --------- HOW IT'S MADE --------- */
+
+.centered   {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-container h3  {
+    color: white;
+    font-size: 7em;
+    font-weight: 900;
 }
