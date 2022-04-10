@@ -44,7 +44,16 @@ img {
     flex-direction: column;
 }
 
+a {
+    text-decoration: none;
+    font-weight: 400;
+    /* 1.6*10 = 16px */
+    font-size: 1.2rem;
+    color: whitesmoke;
+}
+
 /* -------------- LANDING PAGE -------------- */
+
 .landing-image  {
     margin-top: 40px;
 }
@@ -120,20 +129,19 @@ img {
 }
 
 /* -------------- INDEX HOME PAGE -------------- */
-header  {
+nav  {
     display: flex;
-    flex-direction: column;
     background-color: maroon;
     height: 100px;
 }
 
-main {
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6));
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: whitesmoke;
+nav ul  {
+    list-style-type: none;
+}
+
+nav img  {
+    width: 100px;
+    height: 45px;
 }
 
 nav {
@@ -156,109 +164,6 @@ nav ul li {
 }
 
 nav ul li a:hover {
-    color: #4CAF50;
+    color: lightsalmon;
     transition: .5s ease-in-out;
-}
-
-.header-content {
-    width: 50%;
-    position: relative;
-    top: 16%;
-    left: 8%;
-}
-
-form {
-    margin: 2.4rem 0;
-}
-
-input {
-    font-size: 1.4rem;
-}
-
-input[type=text],
-input[type=email] {
-    width: 50%;
-    padding: 12px 20px;
-    margin: 1.2rem 0;
-    display: block;
-    border: 1px solid #ccc;
-}
-
-input[type=submit] {
-    width: 50%;
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-transform: uppercase;
-}
-
-input::placeholder {
-    font-size: 0.9rem;
-    color: #ccc;
-}
-
-/* -------------- ORIGINAL ELITE BEER SECTION -------------- */
-
-#promoImage    {
-    display: flex;
-    flex-direction: row;
-    height: 600px;
-    justify-content: center;
-    padding: 40px;
-}
-
-#OriginalEliteBeer  {
-    height: 40vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6));
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: whitesmoke;
-}
-
-/* -------------- DIFFERENT FLAVOURS SECTION -------------- */
-#productInfo    {
-    display: flex;
-    flex-direction: row;
-    height: 450px;
-    justify-content: space-between;
-    padding: 40px;
-}
-
-.productDesc    {
-    height: 50vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6));
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: whitesmoke;
-}
-
-/* -------------- ABOUT US -------------- */
-#aboutUs    {
-    height: 75vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6));
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: whitesmoke;
-}
-
-/* -------------- FOOTER -------------- */
-footer  {
-    display: flex;
-    flex-direction: column;
-    background-color: maroon;
-    height: 200px;
-}
-
-#footerMenu  {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 40px;
 }
