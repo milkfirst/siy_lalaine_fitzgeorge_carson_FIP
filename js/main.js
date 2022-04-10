@@ -13,3 +13,12 @@ carson.addEventListener('click', function car() {
 	//img.src = 'images/carson.png'
 	textBox.innerText = 'Hi, I am Carson. I am a hard worker and enjoys coming up with the craziest ideas for products each day, No joke. There is a locked box that contains each of my ideas. But you will never find it.';
 });
+
+ScrollReveal({
+    reset: true,
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+});
+
+ScrollReveal().reveal('.beer-title', { delay: 500, origin: 'left' });
